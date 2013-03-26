@@ -18,7 +18,7 @@
  
 #App::uses('FB', 'Facebook.Lib');
 #App::uses('FacebookInfo', 'Facebook.Lib');
-App::import('Vendor', 'Gapi.gapi',
+App::import('Vendor', 'Analytics.Gapi',
   array(
     'file' => 'gapi.class.php'
   )
