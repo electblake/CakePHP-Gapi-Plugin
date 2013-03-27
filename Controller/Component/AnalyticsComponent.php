@@ -92,9 +92,9 @@ class AnalyticsComponent extends Component {
 
       foreach($ga->getResults() as $result){
         $data = array();
-        
+
           foreach($dimensions as $d){
-            $data[$d] = (string)$result;
+            $data[$d] = $result->{'get'.$d}();
               foreach($metrics as $m){
                 $data[$m] = $result->{'get'.$m}();
               }
